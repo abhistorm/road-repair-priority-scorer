@@ -1,6 +1,6 @@
 # Road Repair Priority Scorer
 
-**Project 099 of 100 · Public services & civic systems · Classification**
+**Project  · Public services & civic systems · Classification**
 
 A standalone, runnable AI/ML project with its own saved fitted model, prediction API, and browser GUI. Its primary workflow is **Road Repair Priority Scorer · Target band simulator**. The feature fields, target, model, and project-specific control are configured for this use case.
 
