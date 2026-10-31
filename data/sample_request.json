@@ -1,0 +1,14 @@
+{
+  "features": {
+    "p099_road_repair_priority_scorer_wait_time_min": 0.0,
+    "p099_road_repair_priority_scorer_application_completeness": 0.0,
+    "p099_road_repair_priority_scorer_service_load": 0.0,
+    "p099_road_repair_priority_scorer_repeat_visits": 0.0,
+    "p099_road_repair_priority_scorer_travel_distance_km": 0.0,
+    "p099_road_repair_priority_scorer_staff_ratio": 0.0,
+    "p099_road_repair_priority_scorer_response_delay_hours": 0.0,
+    "p099_road_repair_priority_scorer_neighborhood_index": 0.0,
+    "p099_road_repair_priority_scorer_weather_impact": 0.0,
+    "p099_road_repair_priority_scorer_request_complexity": 0.0
+  }
+}

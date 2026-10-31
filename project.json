@@ -1,0 +1,54 @@
+{
+  "id": "099",
+  "slug": "099-road-repair-priority-scorer",
+  "name": "Road Repair Priority Scorer",
+  "domain": "Public services & civic systems",
+  "domain_slug": "public-services",
+  "task_type": "classification",
+  "target": "p099_road_repair_priority_scorer_outcome_label",
+  "features": [
+    "p099_road_repair_priority_scorer_wait_time_min",
+    "p099_road_repair_priority_scorer_application_completeness",
+    "p099_road_repair_priority_scorer_service_load",
+    "p099_road_repair_priority_scorer_repeat_visits",
+    "p099_road_repair_priority_scorer_travel_distance_km",
+    "p099_road_repair_priority_scorer_staff_ratio",
+    "p099_road_repair_priority_scorer_response_delay_hours",
+    "p099_road_repair_priority_scorer_neighborhood_index",
+    "p099_road_repair_priority_scorer_weather_impact",
+    "p099_road_repair_priority_scorer_request_complexity"
+  ],
+  "model_key": "ada-boost",
+  "model_class": "AdaBoostClassifier",
+  "serving": "Gradio",
+  "extension_focus": "Prometheus metrics",
+  "seed": 202699,
+  "rows": 457437,
+  "dataset_bytes": 39798585,
+  "model_training": {
+    "source": "synthetic dataset bundled with this project",
+    "sample_rows": 5000,
+    "fit_rows": 4000,
+    "holdout_rows": 1000,
+    "metrics": {
+      "accuracy": 0.916,
+      "macro_f1": 0.916,
+      "roc_auc": 0.9759
+    },
+    "artifact": "models/model.joblib"
+  },
+  "gui_feature": {
+    "mode": "range",
+    "title": "Road Repair Priority Scorer · Target band simulator",
+    "description": "Explore how a controlled feature shift moves this project’s prediction. This panel is tuned to Road Repair Priority Scorer and its p099 road repair priority scorer weather impact signal.",
+    "focus_feature": "p099_road_repair_priority_scorer_weather_impact",
+    "mode_title": "Target band simulator"
+  },
+  "gui": {
+    "frontend": "HTML/CSS/JavaScript",
+    "backend": "FastAPI",
+    "standalone": true
+  },
+  "model_artifact": "models/model.joblib",
+  "model_bytes": 54060
+}
